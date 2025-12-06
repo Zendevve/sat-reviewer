@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAT Practice Tool Proposal</title>
+<style>
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #1a1a1a;
+    margin: 40px;
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  header h2 {
+    font-size: 18px;
+    color: #555;
+  }
+  h3 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f5f5f5;
+  }
+  ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  footer {
+    margin-top: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SAT Question Tagging & Practice PDF Tool</h1>
+  <h2>Client Proposal</h2>
+</header>
+
+<section>
+  <h3>Project Overview</h3>
+  <p>
+    The SAT Question Tagging & Practice PDF Tool is a web application designed to help SAT tutors quickly create custom practice materials tailored to their students’ needs. 
+    The tool allows organizing questions by topic, skill, or difficulty, and easily generating practice PDFs for focused student practice.
+  </p>
+</section>
+
+<section>
+  <h3>Key Features (MVP)</h3>
+
+  <h4>1. Question Management</h4>
+  <ul>
+    <li>Store SAT questions from officially released sources:
+      <ul>
+        <li>College Board SAT Practice Tests (1–10)</li>
+        <li>Digital SAT Practice Tests</li>
+        <li>Khan Academy SAT questions</li>
+        <li>Publicly released QAS tests</li>
+      </ul>
+    </li>
+    <li>Add, edit, or remove questions manually</li>
+    <li>Include section metadata (Reading, Writing, Math) and source information</li>
+  </ul>
+
+  <h4>2. Tagging System</h4>
+  <ul>
+    <li>Add multiple custom tags to each question (e.g., “quadratic,” “semicolon,” “comma splice”)</li>
+    <li>Tags help identify specific skills or problem types</li>
+    <li>Search and filter by tags, section, or source</li>
+  </ul>
+
+  <h4>3. Search & Filter</h4>
+  <ul>
+    <li>Find questions by keywords, tags, section, or source</li>
+    <li>Helps create targeted practice for students needing help in specific topics</li>
+  </ul>
+
+  <h4>4. Packet Builder & PDF Export</h4>
+  <ul>
+    <li>Select questions to build a custom practice packet</li>
+    <li>Reorder questions as needed</li>
+    <li>Export as a clean, professional PDF</li>
+    <li>Option to include answers for tutor reference</li>
+  </ul>
+
+  <h4>5. User Authentication</h4>
+  <ul>
+    <li>Secure login for tutors</li>
+    <li>Ensures private access to questions and packets</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Benefits for Tutors</h3>
+  <ul>
+    <li>Save time creating targeted practice materials</li>
+    <li>Quickly find questions on specific topics</li>
+    <li>Generate professional PDFs for students in minutes</li>
+    <li>Keep all questions organized in a single private platform</li>
+  </ul>
+</section>
+
+<section>
+  <h3>MVP Scope</h3>
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>Included in MVP</th>
+    </tr>
+    <tr>
+      <td>Add/Edit/Delete Questions</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Add/Remove Tags</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Search & Filter by Tags</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Build Custom Practice Packets</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Export Packet as PDF</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Login / Authentication</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Import Images / Graphs</td>
+      <td>❌ (Post-MVP)</td>
+    </tr>
+    <tr>
+      <td>Student Accounts / Assignments</td>
+      <td>❌ (Post-MVP)</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>Legal & Content Sources</h3>
+  <ul>
+    <li>All questions come from publicly released SAT materials</li>
+    <li>Sources include:
+      <ul>
+        <li>Official College Board SAT practice tests</li>
+        <li>Khan Academy SAT practice questions</li>
+        <li>Publicly released QAS tests</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Timeline (Estimated MVP Build)</h3>
+  <table>
+    <tr>
+      <th>Phase</th>
+      <th>Duration</th>
+    </tr>
+    <tr>
+      <td>Core Question Management & Tagging</td>
+      <td>1 week</td>
+    </tr>
+    <tr>
+      <td>Search, Filter, & Packet Builder</td>
+      <td>1 week</td>
+    </tr>
+    <tr>
+      <td>PDF Export & Authentication</td>
+      <td>1 week</td>
+    </tr>
+    <tr>
+      <td>Testing & Refinement</td>
+      <td>1 week</td>
+    </tr>
+  </table>
+  <p><strong>Total MVP Build Time: ~4 weeks</strong></p>
+</section>
+
+<section>
+  <h3>Next Steps</h3>
+  <ul>
+    <li>Confirm project approval</li>
+    <li>Finalize question sources and tagging strategy</li>
+    <li>Begin MVP development</li>
+    <li>Review progress and provide feedback at each milestone</li>
+  </ul>
+</section>
+
+<footer>
+  Contact: [Your Name / Company] | [Email / Phone]
+</footer>
+
+</body>
+</html>
